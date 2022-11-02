@@ -1,0 +1,144 @@
+*{
+   max-height: 100vh;
+    
+    font-family: 'poppins';
+}
+
+body{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(134,20,105,1) 50%);
+
+}
+p,span,h3,h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+.main{
+    position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.score_0,.score_1{
+color:#b0006a ;
+font-size:3.5rem ;
+}
+.player-0{
+    position: relative;
+    background-color: rgba(186, 186, 186, 0.5);;
+    padding: 20px;
+    margin-top: 20px;
+    height: 85vh;
+    width: 40%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.player-1{
+    position: relative;
+    background-color: rgba(186, 186, 186, 0.5);
+    margin-top: 20px;
+    padding: 20px;
+    width: 40%;
+    height: 85vh;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.background{
+    background-color: #ccc;
+}
+.active{
+    background-color: rgba(255, 255, 255, 0.5);
+   
+}
+.notActive{
+    background-color: rgba(186, 186, 186, 0.5);;
+}
+.hidden{
+    display: none;
+}
+.current-player-0, .current-player-1{
+   
+    position: relative;
+    margin-top: 500px;
+    background-color: rgb(183, 21, 118);
+    width: 40%;
+    margin: 10rem auto;
+    border-radius: 1.5rem;
+   
+}
+.dice-image{
+    position: absolute;
+    left: 50%;
+    top:16rem;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px 10px 0;
+        padding: 50px;
+    }
+    
+}
+
+.button{
+    position: absolute;
+    left: 50%;
+    top:20%;
+    transform: translate(-50%,-50%);
+    
+}
+.btn{
+    background-color: rgb(46, 46, 46);
+    border:none;
+    width: 12rem;
+}
+.btn:hover{
+    background-color: #624F82;
+}
+.Roll{
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    position: absolute;
+    top:25rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Hold{
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    position: absolute;
+    top:30rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.winner{
+    background-color: #50577A;
+    animation: Fade 1s ease-in;
+    color: #fff;
+}
+
+@keyframes Fade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
